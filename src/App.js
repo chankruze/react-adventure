@@ -16,15 +16,17 @@ import './App.css';
 // import Inline from './components/Inline';
 import styles from './components/styles.module.css';
 import Inline from './components/Inline';
+import Form from './components/Form';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        <Form/>
         {/* <Inline/> */}
-        <h1 className={styles.success}>success</h1>
-        {<h1 className={styles.error}>error</h1>}
+        {/* <h1 className={styles.success}>success</h1>
+        {<h1 className={styles.error}>error</h1>} */}
         {/* {<Stylesheet primary={true} />} */}
         {/* <NameList/> */}
         {/* <ConditionalRendering/> */}
