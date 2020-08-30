@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 // import logo from './logo.svg';
 import './App.css';
-
+// import FragmentTest from './components/FragmentTest';
+import Table from './components/Table';
 // import NameList from './components/NameList';
 // import Greet from './components/Greet';
 // import Welcome from './components/Welcome';
@@ -17,14 +18,16 @@ import './App.css';
 // import styles from './components/styles.module.css';
 // import Inline from './components/Inline';
 // import Form from './components/Form';
-import LifecycleA from './components/LifecycleA';
+// import LifecycleA from './components/LifecycleA';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <LifecycleA />
+        <Table/>
+        {/* <FragmentTest/> */}
+        {/* <LifecycleA /> */}
         {/* <Form/> */}
         {/* <Inline/> */}
         {/* <h1 className={styles.success}>success</h1>
