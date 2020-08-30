@@ -7,7 +7,7 @@ Copyright (c) Geekofia 2020 and beyond
 
 import React, { Component } from 'react'
 
-export class Form extends Component {
+class Form extends Component {
     constructor(props) {
         super(props)
 
