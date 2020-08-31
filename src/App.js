@@ -2,7 +2,8 @@ import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
 // import RefsDemo from './components/RefsDemo';
-import FocusInput from './components/FocusInput';
+// import FocusInput from './components/FocusInput';
+import FwdRefParent from './components/FwdRefParent';
 // import FragmentTest from './components/FragmentTest';
 // import Table from './components/Table';
 // import ParentComp from './components/ParentComp';
@@ -28,7 +29,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <FocusInput />
+        <FwdRefParent />
+        {/* <FocusInput /> */}
         {/* <RefsDemo /> */}
         {/* <ParentComp/> */}
         {/* <Table/> */}
@@ -52,7 +54,7 @@ function App() {
         </Greet>
         <Welcome name="Bunnu"/> */}
       </header>
-    </div>
+    </div >
   );
 }
 
