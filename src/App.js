@@ -1,9 +1,10 @@
 import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
+import RefsDemo from './components/RefsDemo';
 // import FragmentTest from './components/FragmentTest';
 // import Table from './components/Table';
-import ParentComp from './components/ParentComp';
+// import ParentComp from './components/ParentComp';
 // import NameList from './components/NameList';
 // import Greet from './components/Greet';
 // import Welcome from './components/Welcome';
@@ -26,7 +27,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <ParentComp/>
+        <RefsDemo />
+        {/* <ParentComp/> */}
         {/* <Table/> */}
         {/* <FragmentTest/> */}
         {/* <LifecycleA /> */}
