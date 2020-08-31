@@ -1,8 +1,8 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
 // import FragmentTest from './components/FragmentTest';
-import Table from './components/Table';
+// import Table from './components/Table';
 import ParentComp from './components/ParentComp';
 // import NameList from './components/NameList';
 // import Greet from './components/Greet';
