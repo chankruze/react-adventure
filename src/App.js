@@ -4,6 +4,7 @@ import './App.css';
 // import RefsDemo from './components/RefsDemo';
 // import FocusInput from './components/FocusInput';
 import FwdRefParent from './components/FwdRefParent';
+import PortalDemo from './components/PortalDemo';
 // import FragmentTest from './components/FragmentTest';
 // import Table from './components/Table';
 // import ParentComp from './components/ParentComp';
@@ -27,9 +28,10 @@ import FwdRefParent from './components/FwdRefParent';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header"> */}
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <FwdRefParent />
+        <PortalDemo/>
+        {/* <FwdRefParent /> */}
         {/* <FocusInput /> */}
         {/* <RefsDemo /> */}
         {/* <ParentComp/> */}
@@ -53,7 +55,7 @@ function App() {
           Yada mat mal apna nunnu !
         </Greet>
         <Welcome name="Bunnu"/> */}
-      </header>
+      {/* </header> */}
     </div >
   );
 }
