@@ -5,6 +5,8 @@ import './App.css';
 // import FocusInput from './components/FocusInput';
 import FwdRefParent from './components/FwdRefParent';
 import PortalDemo from './components/PortalDemo';
+import Hero from './components/Hero';
+import ErrorBound from './components/ErrorBound';
 // import FragmentTest from './components/FragmentTest';
 // import Table from './components/Table';
 // import ParentComp from './components/ParentComp';
@@ -29,29 +31,38 @@ function App() {
   return (
     <div className="App">
       {/* <header className="App-header"> */}
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <PortalDemo/>
-        {/* <FwdRefParent /> */}
-        {/* <FocusInput /> */}
-        {/* <RefsDemo /> */}
-        {/* <ParentComp/> */}
-        {/* <Table/> */}
-        {/* <FragmentTest/> */}
-        {/* <LifecycleA /> */}
-        {/* <Form/> */}
-        {/* <Inline/> */}
-        {/* <h1 className={styles.success}>success</h1>*/}
-        {/*<h1 className={styles.error}>error</h1>} */}
-        {/* {<Stylesheet primary={true} />} */}
-        {/* <NameList/> */}
-        {/* <ConditionalRendering/> */}
-        {/* <ParentComponent/> */}
-        {/* <EventBind/> */}
-        {/* <FunctionClick/>*/}
-        {/*<ClassClick/> */}
-        {/* <Counter /> */}
-        {/* <Message/> */}
-        {/* <Greet name="Bunnu" heroName="Batman">
+      {/* <img src={logo} className="App-logo" alt="logo" /> */}
+      <ErrorBound>
+        <Hero heroName="Batman" />
+      </ErrorBound>
+      <ErrorBound>
+        <Hero heroName="Joker" />
+      </ErrorBound>
+      <ErrorBound>
+        <Hero heroName="Superman" />
+      </ErrorBound>
+      {/* <PortalDemo/> */}
+      {/* <FwdRefParent /> */}
+      {/* <FocusInput /> */}
+      {/* <RefsDemo /> */}
+      {/* <ParentComp/> */}
+      {/* <Table/> */}
+      {/* <FragmentTest/> */}
+      {/* <LifecycleA /> */}
+      {/* <Form/> */}
+      {/* <Inline/> */}
+      {/* <h1 className={styles.success}>success</h1>*/}
+      {/*<h1 className={styles.error}>error</h1>} */}
+      {/* {<Stylesheet primary={true} />} */}
+      {/* <NameList/> */}
+      {/* <ConditionalRendering/> */}
+      {/* <ParentComponent/> */}
+      {/* <EventBind/> */}
+      {/* <FunctionClick/>*/}
+      {/*<ClassClick/> */}
+      {/* <Counter /> */}
+      {/* <Message/> */}
+      {/* <Greet name="Bunnu" heroName="Batman">
           Yada mat mal apna nunnu !
         </Greet>
         <Welcome name="Bunnu"/> */}
