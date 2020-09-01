@@ -7,6 +7,8 @@ import FwdRefParent from './components/FwdRefParent';
 import PortalDemo from './components/PortalDemo';
 import Hero from './components/Hero';
 import ErrorBound from './components/ErrorBound';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
 // import FragmentTest from './components/FragmentTest';
 // import Table from './components/Table';
 // import ParentComp from './components/ParentComp';
@@ -30,9 +32,11 @@ import ErrorBound from './components/ErrorBound';
 function App() {
   return (
     <div className="App">
-      {/* <header className="App-header"> */}
+      <header className="App-header">
       {/* <img src={logo} className="App-logo" alt="logo" /> */}
-      <ErrorBound>
+      <ClickCounter />
+      <HoverCounter />
+      {/* <ErrorBound>
         <Hero heroName="Batman" />
       </ErrorBound>
       <ErrorBound>
@@ -40,7 +44,7 @@ function App() {
       </ErrorBound>
       <ErrorBound>
         <Hero heroName="Superman" />
-      </ErrorBound>
+      </ErrorBound> */}
       {/* <PortalDemo/> */}
       {/* <FwdRefParent /> */}
       {/* <FocusInput /> */}
@@ -66,7 +70,7 @@ function App() {
           Yada mat mal apna nunnu !
         </Greet>
         <Welcome name="Bunnu"/> */}
-      {/* </header> */}
+      </header>
     </div >
   );
 }
