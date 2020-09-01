@@ -34,8 +34,8 @@ function App() {
     <div className="App">
       <header className="App-header">
       {/* <img src={logo} className="App-logo" alt="logo" /> */}
-      <ClickCounter />
-      <HoverCounter />
+      <ClickCounter name='chandan' increment={3}/>
+      <HoverCounter name='khushu' increment={13}/>
       {/* <ErrorBound>
         <Hero heroName="Batman" />
       </ErrorBound>

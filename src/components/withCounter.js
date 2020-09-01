@@ -8,12 +8,12 @@ Copyright (c) Geekofia 2020 and beyond
 import React from 'react'
 
 // function to enhance original component
-const withCounter = WrappedComponent => {
+const withCounter = (WrappedComponent) => {
     // Enhanced Component
     class WithCounter extends React.Component {
         constructor(props) {
             super(props)
-
+            
             this.state = {
                 count: 0
             }
@@ -22,7 +22,7 @@ const withCounter = WrappedComponent => {
         // function to increase the counter
         incrementCount = () => {
             this.setState(prevState => {
-                return { count: prevState.count + 1 }
+                return { count: prevState.count + this.props.increment }
             })
         }
 
@@ -30,7 +30,8 @@ const withCounter = WrappedComponent => {
         render() {
             return (<WrappedComponent 
                 count={this.state.count} 
-                incrementCount={this.incrementCount} />)
+                incrementCount={this.incrementCount}
+                {...this.props}/>)
         }
     }
 
