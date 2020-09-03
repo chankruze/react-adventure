@@ -1,9 +1,12 @@
 import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import Counter2 from './components/Counter2';
-import ClickCounter2 from './components/ClickCounter2';
-import HoverCounter2 from './components/HoverCounter2';
+import ComponentA from './components/context/ComponentA';
+import { UserProvider } from './components/context/userContext';
+import ComponentD from './components/context/ComponentD';
+// import Counter2 from './components/Counter2';
+// import ClickCounter2 from './components/ClickCounter2';
+// import HoverCounter2 from './components/HoverCounter2';
 // import RefsDemo from './components/RefsDemo';
 // import FocusInput from './components/FocusInput';
 // import FwdRefParent from './components/FwdRefParent';
@@ -37,8 +40,19 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
+
+        <UserProvider value="Chandan">
+          <ComponentA />
+        </UserProvider>
+
+        <UserProvider value={{name : "Khushu", hairType : "very long"}}>
+          <ComponentD/>
+        </UserProvider>
+
+        {/* <ComponentA /> */}
+
         {/* As props body: props.method() */}
-        <Counter2>
+        {/* <Counter2>
           {(count, countHandler) => (
             <ClickCounter2 count={count} incrementCount={countHandler} />
           )}
@@ -48,7 +62,7 @@ function App() {
           {(count, countHandler) => (
             <HoverCounter2 count={count} incrementCount={countHandler} />
           )}
-        </Counter2>
+        </Counter2> */}
 
         {/* As props key: props.method() */}
         {/* <Counter2
